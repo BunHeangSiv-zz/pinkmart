@@ -1,15 +1,21 @@
-<!-- Header -->
-<?php
-include '../../includes/header.php';
-?>
+<link rel="stylesheet" href="../../assets/style.css">
+<!-- component -->
+<div x-data="setup()" :class="{ 'dark': isDark }">
+    <div class="min-h-screen flex flex-col flex-auto flex-shrink-0 antialiased bg-white dark:bg-gray-700 text-black dark:text-white">
+        <!-- Header -->
+        <?php include '../../includes/header.php'; ?>
+        <!-- ./Header -->
 
-<body class="flex">
-    <!-- Sidebar -->
-    <?php include '../../includes/sidebar.php';?>
-    <!-- Content -->
-    <div class="flex-1 p-6 ml-[300px]">
-        <h1 class="text-3xl font-bold mb-4">Content Area</h1>
-        <p>This is the main content area.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <!-- Sidebar -->
+        <?php include '../../includes/sidebar.php'; ?>
+        <!-- ./Sidebar -->
+
+        <div class="h-full ml-14 mt-14 mb-10 md:ml-64">
+
+        <!-- ./External resources -->
+        </div>
     </div>
-</body>
+</div>
+<!-- change the color script -->
+<script src="../../assets/home.js"></script>
+<!-- end -->
