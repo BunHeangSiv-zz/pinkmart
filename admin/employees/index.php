@@ -1,29 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
-    <title>Document</title>
-</head>
-<!-- Header -->
-<?php
-include '../../includes/header.php';
-?>
+<link rel="stylesheet" href="../../assets/style.css">
+<!-- component -->
+<div x-data="setup()" :class="{ 'dark': isDark }">
+    <div class="min-h-screen flex flex-col flex-auto flex-shrink-0 antialiased bg-white dark:bg-gray-700 text-black dark:text-white">
+        <!-- Header -->
+        <?php include '../../includes/header.php'; ?>
+        <!-- ./Header -->
 
-<body class="flex">
-    <!-- Sidebar -->
-    <?php include '../../includes/sidebar.php';?>
-    <!-- Content -->
-<body>
-    <div class="contanner">
+        <!-- Sidebar -->
+        <?php include '../../includes/sidebar.php'; ?>
+        <!-- ./Sidebar -->
+
+        <div class="h-full ml-14 mt-14 mb-10 md:ml-64">
+        <div class="contanner">
         <div class="p-2 text-center grid gap-x-1 gap-y-1 grid-cols-12 border border-transparent">
             <a href="Create.php"
                 class="mt-4 col-span-4 flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-pink-500 hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Add
@@ -102,8 +91,10 @@ include '../../includes/header.php';
             </table>
         </div>
     </div>
-
-
-</body>
-
-</html>
+        <!-- ./External resources -->
+        </div>
+    </div>
+</div>
+<!-- change the color script -->
+<script src="../../assets/home.js"></script>
+<!-- end -->

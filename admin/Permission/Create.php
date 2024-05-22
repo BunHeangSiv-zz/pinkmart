@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.17/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
-    <title>Create Customer</title>
     <style>
         .Thomasfadi{
             display: flex;
@@ -70,10 +61,20 @@
   border-color: rgba(236, 72, 153, 1);
 }
     </style>
-</head>
+<link rel="stylesheet" href="../../assets/style.css">
+<!-- component -->
+<div x-data="setup()" :class="{ 'dark': isDark }">
+    <div class="min-h-screen flex flex-col flex-auto flex-shrink-0 antialiased bg-white dark:bg-gray-700 text-black dark:text-white">
+        <!-- Header -->
+        <?php include '../../includes/header.php'; ?>
+        <!-- ./Header -->
 
-<body class="bg-gray-100 p-8">
-    <div class="max-w-3xl mx-auto bg-white p-5 rounded-lg shadow-xl">
+        <!-- Sidebar -->
+        <?php include '../../includes/sidebar.php'; ?>
+        <!-- ./Sidebar -->
+
+        <div class="h-full ml-14 mt-14 mb-10 md:ml-64">
+        <div class="max-w-3xl mx-auto bg-white p-5 rounded-lg shadow-xl">
         <!-- header -->
         <h1 class="text-xl font-bold mb-4">Permission Information</h1>
         <form id="selecForm">
@@ -269,6 +270,10 @@
 
         </form>
     </div>
-</body>
-
-</html>
+        <!-- ./External resources -->
+        </div>
+    </div>
+</div>
+<!-- change the color script -->
+<script src="../../assets/home.js"></script>
+<!-- end -->

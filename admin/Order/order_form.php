@@ -1,6 +1,6 @@
 <?php
 include("../../connection/conect.php");
-include("../../root/Header.php");
+include("../../includes/header.php");
 $sql_product = "SELECT * FROM tblproduct WHERE instock > 1";
 $sql_employee = "SELECT * FROM tblemployee";
 $sql_customer = "SELECT * FROM tblcustomer";
@@ -109,8 +109,11 @@ while ($row = mysqli_fetch_assoc($result_product)) {
 
 </head>
 
-<body>
-    <div class="container mx-auto p-10">
+<body class="flex">
+    <!-- Sidebar -->
+    <?php include '../../includes/sidebar.php';?>
+    <!-- Content -->
+    <div class="container m-12">
         <div class="bg-gray-200 p-4 border-2 border-pink-400">
             <form action="insert_order.php" method="post">
                 <label for="employeeId" class="block text-sm font-medium leading-6 text-pink-400">Employee

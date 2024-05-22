@@ -1,6 +1,6 @@
 <?php
-include("../../connection/conect.php");
-include("../../root/Header.php");
+include '../../connection/conect.php';
+include("../../includes/header.php");
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $employeeId = $_POST['employeeId'];
     $customerId = $_POST['customerid'];
@@ -126,7 +126,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Invoice</title>
 </head>
 
-<body>
+<body class="flex">
+    <!-- Sidebar -->
+    <?php include '../../includes/sidebar.php';?>
+    <!-- Content -->
     <div class="container mx-auto p-10">
         <div class="bg-gray-200 p-4 border-2 border-pink-400">
             <div class="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-12">

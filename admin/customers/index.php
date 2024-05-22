@@ -1,33 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.17/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
-    <title>Customer List</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    
 
-    <!-- dropdown -->
+    <link rel="stylesheet" href="../../assets/style.css">
+<!-- component -->
+<div x-data="setup()" :class="{ 'dark': isDark }">
+    <div class="min-h-screen flex flex-col flex-auto flex-shrink-0 antialiased bg-white dark:bg-gray-700 text-black dark:text-white">
+        <!-- Header -->
+        <?php include '../../includes/header.php'; ?>
+        <!-- ./Header -->
 
+        <!-- Sidebar -->
+        <?php include '../../includes/sidebar.php'; ?>
+        <!-- ./Sidebar -->
 
-</head>
-<!-- Header -->
-<?php
-include '../../includes/header.php';
-?>
-
-<body class="flex">
-    <!-- Sidebar -->
-    <?php include '../../includes/sidebar.php';?>
-    <!-- Content -->
-    <div class="max-w-3xl mx-auto bg-white p-5 rounded-lg shadow-xl">
+        <div class="h-full ml-14 mt-14 mb-10 md:ml-64">
+        <div class="max-w-3xl mx-auto bg-white p-5 rounded-lg shadow-xl">
         <!-- header -->
         <h1 class="text-xl font-bold mb-4">Customer List</h1>
         <form id="selecForm">
@@ -165,6 +152,10 @@ include '../../includes/header.php';
                 </div>
         </form>
     </div>
-</body>
-
-</html>
+        <!-- ./External resources -->
+        </div>
+    </div>
+</div>
+<!-- change the color script -->
+<script src="../../assets/home.js"></script>
+<!-- end -->
