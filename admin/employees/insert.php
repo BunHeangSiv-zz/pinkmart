@@ -12,6 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $telegram = $_POST['telegram'];
     $positionID = $_POST['position_id'];
+    $statusID = $_POST['status_id'];
 
     // Handle file upload
     $photo = $_FILES['photo']['name'];
@@ -27,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Set a default value for statusid if it is required and not provided
-    $statusID = 1; // Set your desired default value
+    //$statusID = 2; // Set your desired default value
 
     $sql = "INSERT INTO tblemployee (EmployeeName, PositionID, SexID, DOB, Address, PhoneNumber, Email, Telegram, Photo, StatusID)
             VALUES ('$employeeName', '$positionID', '$sexID', '$dob', '$address', '$phoneNumber', '$email', '$telegram', '$photo', '$statusID')";

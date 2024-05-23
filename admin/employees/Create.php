@@ -4,6 +4,8 @@ $sql_sex = "SELECT * FROM tblsex";
 $result_sex = mysqli_query($conn, $sql_sex);
 $sql_position = "SELECT * FROM tblposition";
 $result_position = mysqli_query($conn, $sql_position);
+$sql_status = "SELECT * FROM tblstatus";
+$result_status = mysqli_query($conn, $sql_status);
 ?>
 <div id="createProductModal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
     <div class="relative p-4 w-full max-w-4xl max-h-full">
@@ -72,16 +74,21 @@ $result_position = mysqli_query($conn, $sql_position);
                 }
                 ?>
             </select>
+        </div><div>
+            <label for="status_id" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Status</label>
+            <select name="status_id" id="status_id" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                <option value="selected">Select Status</option>
+                <?php
+                // Fetch positions from the database
+                while ($row = mysqli_fetch_assoc($result_status)) {
+                    echo "<option value='{$row['statusid']}'>{$row['statusname']}</option>";
+                }
+                ?>
+            </select>
         </div>
     </div>
     <div class="flex items-center space-x-4">
         <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center bg-blue-600 hover:bg-blue-700 focus:ring-blue-800">Save</button>
-        <button type="button" class="text-red-600 inline-flex items-center hover:text-white border border-red-600 hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">
-            <svg class="mr-1 -ml-1 w-5 h-5" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd" />
-            </svg>
-            Cancel
-        </button>
     </div>
 </form>
 
