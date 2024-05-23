@@ -14,18 +14,39 @@
             </div>
             <!-- Modal body -->
             <form action="#">
-                <div class="grid gap-4 mb-4 sm:grid-cols-2">
+                <div>
+                    <label for="id" class="block text-sm font-medium text-gray-900 dark:text-white">User ID: 1</label>
+                </div>
+                <div class="grid gap-4 mb-4 sm:grid-cols-3">
                     <div>
                         <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>
                         <input type="text" name="name" id="name" value="Mr heang" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Ex. Apple iMac 27&ldquo;">
                     </div>
+                    <div><label for="sex" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sex</label>
+                        <select id="sex" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
                     <div>
-                        <label for="brand" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone</label>
-                        <input type="text" name="brand" id="brand" value="098434343" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Ex. Apple">
+                        <label for="photo" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Photo</label>
+                        <input type="file" name="photo" id="photo" value="Mr heang" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Ex. Apple iMac 27&ldquo;">
+                    </div>
+                    <div>
+                        <label for="dob" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Date Of Birth</label>
+                        <input type="text" name="dob" id="dob" value="Mr heang" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Ex. Apple iMac 27&ldquo;">
+                    </div>
+                    <div>
+                        <label for="telegram" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Telegram</label>
+                        <input type="text" name="telegram" id="telegram" value="098434343" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Ex. Apple">
+                    </div>
+                    <div>
+                        <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone</label>
+                        <input type="text" name="phone" id="phone" value="098434343" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Ex. Apple">
                     </div>
                     <div>
                         <label for="price" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Gmail</label>
-                        <input type="number" value="heangzinII@gmail.com" name="price" id="price" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="@gmail.com">
+                        <input type="text" value="heangzinII@gmail.com" name="price" id="price" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="@gmail.com">
                     </div>
                     <div><label for="category" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Roles</label>
                         <select id="category" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
