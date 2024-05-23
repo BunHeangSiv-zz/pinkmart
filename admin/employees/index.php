@@ -89,25 +89,33 @@
                                     <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                                         <tr>
                                             <th scope="col" class="px-4 py-4">No</th>
+                                            <th scope="col" class="px-4 py-3">Profile</th>
                                             <th scope="col" class="px-4 py-3">Name</th>
+                                            <th scope="col" class="px-4 py-3">Sex</th>
+                                            <th scope="col" class="px-4 py-3">Date of Birth</th>
+                                            <th scope="col" class="px-4 py-3">Telegram</th>
                                             <th scope="col" class="px-4 py-3">Phone</th>
                                             <th scope="col" class="px-4 py-3">Email</th>
                                             <th scope="col" class="px-4 py-3">Role</th>
                                             <th scope="col" class="px-4 py-3">Status</th>
                                             <th scope="col" class="px-4 py-3">
-                                                <span class="sr-only">Actions</span>
+                                                <span class="px-4 py-3">Actions</span>
                                             </th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr class="border-b dark:border-gray-700">
                                             <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-gray-600">1</th>
+                                            <td class="px-4 py-3"><img class="rounded-full shadow-lg" src="https://images.newscientist.com/wp-content/uploads/2019/07/09172512/205582.jpg" alt="Bonnie image"/></td>
                                             <td class="px-4 py-3">Mr heang</td>
+                                            <td class="px-4 py-3">Male</td>
+                                            <td class="px-4 py-3 truncate">17-Mar-2003</td>
+                                            <td class="px-4 py-3">098434343</td>
                                             <td class="px-4 py-3">098434343</td>
                                             <td class="px-4 py-3 max-w-[12rem] truncate">heangzinII@gmail.com</td>
                                             <td class="px-4 py-3">Sale</td>
-                                            <td class="px-4 py-3">In-Active</td>
-                                            <td class="px-4 py-3 flex items-center justify-end">
+                                            <td class="px-4 py-3 truncate">In-Active</td>
+                                            <td class="px-4 py-3 flex items-center justify-center">
                                                 <button id="1" data-dropdown-toggle="apple-imac-27-dropdown" class="inline-flex items-center text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700 p-1.5 dark:hover-bg-gray-800 text-center text-gray-500 hover:text-gray-800 rounded-lg focus:outline-none dark:text-gray-400 dark:hover:text-gray-100" type="button">
                                                     <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z" />
@@ -146,13 +154,17 @@
                                             </td>
                                         </tr>
                                         <tr class="border-b dark:border-gray-700">
-                                            <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-gray-600">2</th>
-                                            <td class="px-4 py-3">Mr Daj yub</td>
-                                            <td class="px-4 py-3">032323232</td>
-                                            <td class="px-4 py-3 max-w-[12rem] truncate">bunheang@gmail.com</td>
-                                            <td class="px-4 py-3 max-w-[12rem] truncate">Manager</td>
+                                        <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-gray-600">2</th>
+                                        <td class="px-4 py-3"><img class="rounded-full shadow-lg" src="https://images.newscientist.com/wp-content/uploads/2019/07/09172512/205582.jpg" alt="Bonnie image"/></td>
+                                            <td class="px-4 py-3">Mr heang</td>
+                                            <td class="px-4 py-3">Male</td>
+                                            <td class="px-4 py-3">17-Mar-2003</td>
+                                            <td class="px-4 py-3">098434343</td>
+                                            <td class="px-4 py-3">098434343</td>
+                                            <td class="px-4 py-3 max-w-[12rem] truncate">heangzinII@gmail.com</td>
+                                            <td class="px-4 py-3">Sale</td>
                                             <td class="px-4 py-3">Active</td>
-                                            <td class="px-4 py-3 flex items-center justify-end">
+                                            <td class="px-4 py-3 flex items-center justify-center">
                                                 <button id="2" data-dropdown-toggle="apple-imac-20-dropdown" class="inline-flex items-center text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700 p-1.5 dark:hover-bg-gray-800 text-center text-gray-500 hover:text-gray-800 rounded-lg focus:outline-none dark:text-gray-400 dark:hover:text-gray-100" type="button">
                                                     <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z" />
